@@ -9,8 +9,9 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     useEffect(() => {
         const handleCloseModal = (event: MouseEvent) => {
+          const modal = document.querySelector(".modal") as HTMLElement;
           const target = event.target as HTMLElement;
-          if (!target.closest(".modal")) {
+          if (modal && !modal.contains(target)) {
             onClose();
           }
         };
@@ -29,8 +30,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     <>
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75">
-          <div className="bg-white p-6 rounded shadow-lg">
-            <button className="absolute top-0 right-0 m-2 p-2 text-gray-600 hover:text-gray-800" onClick={onClose}>
+          <div className="bg-white h-[30rem] w-[50rem] p-4 rounded-xl shadow-xl modal relative">
+            <button className="absolute top-0 left-0 m-2 p-2 text-gray-600 hover:text-gray-800" onClick={onClose}>
               Fechar
             </button>
             {children}

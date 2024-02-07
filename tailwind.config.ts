@@ -13,7 +13,7 @@ const config: Config = {
        'cicualar': ['Flow Circular', 'system-ui']
       },
       colors: {
-        Hopedes: '#222222',
+        Hospedes: '#222222',
         DivHospedes: '#F7F7F7',
         border: '#E8E8E8'
       }
