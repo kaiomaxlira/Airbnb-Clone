@@ -15,7 +15,10 @@ const config: Config = {
       colors: {
         Hospedes: '#222222',
         DivHospedes: '#F7F7F7',
-        border: '#E8E8E8'
+        border: '#E8E8E8',
+        textmodal: '#737373',
+        buttonmodal: '#222222',
+        buttonhover: '#000000',
       }
     },
   },

@@ -23,12 +23,12 @@ const App = () => {
         </span>
       </button>
       <Modal isOpen={modalOpen} onClose={closeModal}>
-        <h2 className="text-xl font-bold grid justify-items-center">
-          Conheça os Preferidos dos Hóspedes
+        <h2 className="mt-[5rem] mr-[20rem] my-3 font-bold grid justify-items-center text-center text-3xl">
+          Conheça os<br/> Preferidos<br/> dos Hóspedes
         </h2>
-        <p>
-          Anúncios com este selo indicam que a acomodação é uma das 2 milhões
-          que fazem mais sucesso no Airbnb.
+        <p className="font-light text-center text-base mr-[20rem] text-textmodal leading-5">
+          Anúncios com este selo indicam que a<br/> acomodação é uma das 2 milhões
+          que fazem<br/> mais sucesso no Airbnb.
         </p>
       </Modal>
     </div>
